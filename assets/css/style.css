@@ -11168,16 +11168,15 @@ textarea.form-control-lg {
   margin-bottom: 1rem;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
-  position: relative;
 }
 .display-2--intro {
-  position: relative;
+  display: inline-block;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
 .display-2--description {
   font-size: 1.5rem;
-  position: relative;
+  display: block;
   margin-top: 1.2rem;
   text-transform: none;
 }
