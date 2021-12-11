@@ -9,6 +9,7 @@
     opacity: 0;
   }
 }
+
 .mainFont {
   font-family: Black Han Sans, sans-serif;
 }
@@ -85,9 +86,6 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -11516,7 +11514,8 @@ fieldset:disabled .btn {
 }
 
 .display-3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: Black Han Sans, sans-serif;
+  font-size: 3rem;
 }
 .display-3--title {
   font-size: 1.2rem;
