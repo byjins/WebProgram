@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
@@ -54,12 +55,16 @@
       <!-- START THE CONTENT FOR THE INTRO  -->
       <div class="col-md-6 intros text-start">
         <h1 class="display-2">
-          <span class="display-2--intro mainFont">안녕하세요!</span>
-          <span class="display-2--description lh-base">
-            저는 프론트엔드를 공부하고 있는 <b>Jinny</b>입니다!<br>
-            언제나 열정을 가지고 프로젝트에 임해요!
-          </span>
+           <span class="display-2--intro mainFont">안녕하세요!</span>
+            <!-- 저는 프론트엔드를 공부하고 있는 <b>Jinny</b>입니다!<br>
+            언제나 열정을 가지고 프로젝트에 임해요! -->
         </h1>
+        <span class="text_box mainFont">
+          <span class="text"></span><span class="blink">|</span>
+        </span>
+      <script src="javascript/mainpage.js"></script>
+      <br/>
+      <br/>
         <button type="button" class="rounded-pill btn-rounded">상단메뉴를 클릭해보세요!
           <span><i class="fas fa-arrow-up"></i></span>
         </button>
@@ -99,7 +104,7 @@
           </svg>
         </div>
         <div class="contact-box__info">
-          <a class="contact-box__info--title">유병진</a>
+          <a class="contact-box__info--title" style="color: #000;">유병진</a>
           <p class="contact-box__info--subtitle">제 이름이에요!</p>
         </div>
       </div>  
@@ -115,7 +120,7 @@
           </svg>
         </div>
         <div class="contact-box__info">
-          <a href="mailto:ppwm111@naver.com" class="contact-box__info--title">ppwm111@naver.com</a>
+          <a href="mailto:ppwm111@naver.com" class="contact-box__info--title"style="color: #000;">ppwm111@naver.com</a>
           <p class="contact-box__info--subtitle">지저분한 메일함을 참을 수 없어요!</p>
         </div>
       </div>
@@ -132,7 +137,7 @@
           </svg>
         </div>
         <div class="contact-box__info">
-          <a class="contact-box__info--title">DoBong, Seoul</a>
+          <a class="contact-box__info--title"style="color: #000;">DoBong, Seoul</a>
           <p class="contact-box__info--subtitle">쌍문동에 살고있어요!</p>
         </div>
       </div>
@@ -149,7 +154,7 @@
             </svg>
           </div>
           <div class="contact-box__info">
-            <a class="contact-box__info--title">+82 1088149687</a>
+            <a class="contact-box__info--title"style="color: #000;">+82 1088149687</a>
             <p class="contact-box__info--subtitle">제 전화번호에요!</p>
           </div>
         </div>  
@@ -161,7 +166,7 @@
             </svg>
           </div>
           <div class="contact-box__info">
-            <a class="contact-box__info--title">github, Velog</a>
+            <a class="contact-box__info--title"style="color: #000;">github, Velog</a>
             <p class="contact-box__info--subtitle">꾸준한 자기개발을 하고있어요!</p>
           </div>
           <div id = "skill"></div>
@@ -191,38 +196,69 @@
       <div class="row">
         <div class="col-md-4 col-lg-2">
           <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/html.png" alt="Campany 1 logo" title="Campany 1 Logo" class="img-fluid img-size">
+            <img src="images/campanies/html.png" alt="html" title="html" class="img-fluid img-size">
             <p class="arrow_box">65%</p>
           </div>
           <div class="progress">
             <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          
+          <br/>
+          <br/>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/css.png" alt="Campany 2 logo" title="Campany 2 Logo" class="img-fluid img-size">
+            <img src="images/campanies/css.png" alt="css" title="css" class="img-fluid img-size">
+            <p class="arrow_box">30%</p>
           </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <br/>
+          <br/>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/js.png" alt="Campany 3 logo" title="Campany 3 Logo" class="img-fluid img-size">
+            <img src="images/campanies/js.png" alt="javascript" title="javascript" class="img-fluid img-size">
+            <p class="arrow_box">10%</p>
           </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <br/>
+          <br/>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/java.png" alt="Campany 4 logo" title="Campany 4 Logo" class="img-fluid img-size">
+            <img src="images/campanies/java.png" alt="java" title="java" class="img-fluid img-size">
+            <p class="arrow_box">60%</p>
           </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <br/>
+          <br/>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/sts.png" alt="Campany 5 logo" title="Campany 5 Logo" class="img-fluid img-size">
+            <img src="images/campanies/sts.png" alt="sts" title="sts" class="img-fluid img-size">
+            <p class="arrow_box">30%</p>
           </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <br/>
+          <br/>
         </div>
         <div class="col-md-4 col-lg-2">
           <div class="campanies__logo-box shadow-sm">
-            <img src="images/campanies/github.png" alt="Campany 6 logo" title="Campany 6 Logo" class="img-fluid img-size">
+            <img src="images/campanies/github.png" alt="github" title="github" class="img-fluid img-size">
+            <p class="arrow_box">35%</p>
           </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <br/>
+          <br/>
         </div>
       </div>
     </div>
