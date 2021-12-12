@@ -9,10 +9,6 @@
     opacity: 0;
   }
 }
-
-.mainFont {
-  font-family: Black Han Sans, sans-serif;
-}
 /*!
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -85,9 +81,35 @@
     scroll-behavior: smooth;
   }
 }
-html {
-  scroll-behavior: smooth;
+.arrow_box {
+  display: none;
+  position: absolute;
+  width: 100px;
+  padding: 8px;
+  left: 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
 }
+
+.arrow_box:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: ' ';
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -11615,6 +11637,9 @@ fieldset:disabled .btn {
 .campanies__logo-box img:hover {
   filter: grayscale(120);
 }
+.campanies__logo-box img:hover + p.arrow_box {
+  display: block;
+}
 
 .services {
   position: relative;
@@ -11811,7 +11836,7 @@ fieldset:disabled .btn {
   font-weight: 600;
 }
 .contact-box__info--title {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
 }
